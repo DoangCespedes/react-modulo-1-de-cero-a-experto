@@ -1,0 +1,8 @@
+.container{
+    display:grid;
+     
+}
+.titulo{ 
+    grid-column: span 3;
+    grid-row: span 2;
+}
