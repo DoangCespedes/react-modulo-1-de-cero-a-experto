@@ -18,5 +18,18 @@ En la sigiente practica { 01-intro-react } se pudo aprender:
 
 9.) Usaremos Testing-Library para las pruebas en el DOM , se puede usar en conjunto con Jest , es mas Jest lo sugiere en su documentacion.
 
-10.) 
+10.) Confugurar el babel config como lo tenemos en el proyecto con el { @babel/preset-react } y descargando tambien el modulo { @babel/preset-react } ,  tambien reajustar el jest config para el entorno de pruebas con react { jest-environment-jsdom } y descargar el modulo { jest-environment-jsdom }
+
+11.) Para hacer pruebas con FETCH debiamos configurar el jest pero como node v-18 ya lo incorporo cambie mi version con nvm y segui mis pruebas sin hacer configuraciones en el jest. 
+
+12.) El toMatchSnapshot nos sirve para guardar cualquier cambio que hagamos en el DOM , si queremos hacer algun cambio en nuestro componente que ya tenga un snapshot y queremos dejar los cambios guardados , solo preionamos la tecla u.
+
+13.) El container trabaja como un nodo del DOM , trae casi las mismas propiedades del DOM.
+
+14.)se pueden asignar ID para hacer testing ejm { <span data-testid="test-title" >{title}</span> } y trabajar con ellos llamandolos por el lado del test con un {getByTestId}, en las pruebas FirstAppTest hay ejms.
+
+15.) Es de suma importancia usar el metodo screen , este nos ayuda a manipular el DOM para hacer nuestras pruebas. tambien usar el screen.debug() para ver los cambios en el DOM , es como un console.log()
+
+16.)FireEvent nos ayuda a manejar los eventos para las pruebas en este caso lo usamos para el evento click.
+
 
